@@ -50,9 +50,21 @@
               "target": "Package",
               "version": "[3.0.1, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Serilog.Sinks.Console": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Email": {
+              "target": "Package",
+              "version": "[2.4.0, )"
             },
             "Serilog.Sinks.File": {
               "target": "Package",

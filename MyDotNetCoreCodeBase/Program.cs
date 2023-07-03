@@ -1,12 +1,43 @@
 using MyDotNetCoreCodeBase.Middleware;
 
 using Serilog;
+using Serilog.Sinks.Email;
 
+using System.Net;
+
+// serilog設定
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Debug()
-    .WriteTo.Console() //將Log輸出到終端機
-    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) //將Log輸出為檔案,命名以當天日期為區分
+    .MinimumLevel.Debug() // 該層級以下都記
+    .WriteTo.Console() // 將Log輸出到終端機
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // 將Log輸出為檔案,命名以當天日期為區分
+    // mail設定
+    .WriteTo.Email(new EmailConnectionInfo()
+    {
+        MailServer = "smtp.gmail.com",
+        Port = 465,
+        EnableSsl = true,
+        NetworkCredentials = new NetworkCredential("帳號", "密碼"),
+        EmailSubject = "Error Notification",
+        FromEmail = "寄信者",
+        ToEmail = "收信者",
+    })
     .CreateLogger();
+// 試跑log
+//try
+//{
+//    Log.Information("啟動開始");
+//    int.Parse("aaaa");
+//    return 0;
+//}
+//catch (Exception ex)
+//{
+//    Log.Fatal(ex, "發生例外");
+//    return 1;
+//}
+//finally
+//{
+//    Log.CloseAndFlush(); // 程式要結束前呼叫
+//}
 
 var builder = WebApplication.CreateBuilder(args);
 

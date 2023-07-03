@@ -1,17 +1,6 @@
-2023-07-04 00:06:19.408 +08:00 [FTL] 錯誤訊息 => Exception of type 'System.Exception' was thrown.
-System.Exception: Exception of type 'System.Exception' was thrown.
-   at MyDotNetCoreCodeBase.Controllers.HomeController.Index() in D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\Controllers\HomeController.cs:line 22
-   at lambda_method1(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilder.<>c.<<BuildPipeline>b__8_0>d.MoveNext()
---- End of stack trace from previous location ---
-   at MyDotNetCoreCodeBase.Middleware.CustomerExceptionMiddleware.Invoke(HttpContext context) in D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\Middleware\CustomerExceptionMiddleware.cs:line 17
+2023-07-04 00:46:36.455 +08:00 [INF] 啟動開始
+2023-07-04 00:46:36.572 +08:00 [FTL] 發生例外
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at Program.<Main>$(String[] args) in D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\Program.cs:line 27
