@@ -29,3 +29,7 @@ D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\obj\Debug\net6.0\refint\MyD
 D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\obj\Debug\net6.0\MyDotNetCoreCodeBase.pdb
 D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\obj\Debug\net6.0\MyDotNetCoreCodeBase.genruntimeconfig.cache
 D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\obj\Debug\net6.0\ref\MyDotNetCoreCodeBase.dll
+D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\bin\Debug\net6.0\Serilog.dll
+D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\MyProject\DotNetCorePractice\MyDotNetCoreCodeBase\obj\Debug\net6.0\MyDotNetCoreCodeBase.csproj.CopyComplete

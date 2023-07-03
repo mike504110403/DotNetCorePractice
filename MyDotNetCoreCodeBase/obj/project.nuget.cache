@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "699SSRCRl07Ps06wH1uR+IvPrpKdBqLimrFaf1d7tABpXB1+BIX/dDe9FsI60AVbgD81OgD3sDfRJ5x9pRGfEw==",
+  "dgSpecHash": "96CIUJqqt1Pzn03iIqEqoh3oycI6pq2L0mu3LLMPm0/1U4dCGyiJRU4j6uFi6YiebogSGE0a3idj5iSoQQOQTA==",
   "success": true,
   "projectFilePath": "D:\\MyProject\\DotNetCorePractice\\MyDotNetCoreCodeBase\\MyDotNetCoreCodeBase.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mike5\\.nuget\\packages\\serilog\\3.0.1\\serilog.3.0.1.nupkg.sha512",
+    "C:\\Users\\mike5\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
+    "C:\\Users\\mike5\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using MyDotNetCoreCodeBase.Middleware;
 using MyDotNetCoreCodeBase.Models;
-
 using System.Diagnostics;
+using static MyDotNetCoreCodeBase.Middleware.Piepeline;
 
 namespace MyDotNetCoreCodeBase.Controllers
 {
@@ -15,9 +15,11 @@ namespace MyDotNetCoreCodeBase.Controllers
             _logger = logger;
         }
 
+        // 透過加屬性filter 進middleware
+        [MiddlewareFilter(typeof(CustomerExceptionPipeline))]
         public IActionResult Index()
         {
-            return View();
+            throw new Exception();
         }
 
         public IActionResult Privacy()
